@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TwoPlayerDetails">
+
+    <TextView
+        android:id="@+id/textViewSpacing"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_margin="16dp"/>
+
+    <TextView
+        android:id="@+id/textView2Player1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/textViewSpacing"
+        android:text="Player 1's Name "
+        android:textSize="16sp"
+        android:layout_marginLeft="8dp"/>
+
+
+    <TextView
+        android:id="@+id/textView2Player2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewSpacing"
+        android:text="Player 2's Name "
+        android:textSize="16sp"
+        android:layout_marginLeft="8dp"/>
+
+    <Button
+        android:id="@+id/buttonSubmit2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="48dp"
+        android:layout_marginLeft="48dp"
+        android:layout_marginTop="48dp"
+        android:layout_marginEnd="48dp"
+        android:layout_marginRight="48dp"
+        android:layout_marginBottom="48dp"
+        android:onClick="proceedTwoPlayer"
+        android:text="Submit" />
+
+    <EditText
+        android:id="@+id/editTextPlayer1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:layout_toRightOf="@id/textView2Player1"
+        android:layout_above="@id/textViewSpacing"
+        android:layout_marginLeft="16dp"
+        />
+
+
+    <EditText
+        android:id="@+id/editTextPlayer2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:layout_toRightOf="@id/textView2Player2"
+        android:layout_below="@id/editTextPlayer1"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="32dp"
+        />
+
+    <TextView
+        android:id="@+id/textViewPlayerDetails"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="Player Details"
+        android:layout_margin="36dp"
+        android:textSize="20sp"/>
+
+</RelativeLayout>
